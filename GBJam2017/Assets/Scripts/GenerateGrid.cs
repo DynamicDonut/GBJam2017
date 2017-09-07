@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GenerateGrid : MonoBehaviour {
-	public int gridSize;
-	public int numOfBuildings;
+	public int gridSize, numOfBuildings;
+	public float cellWidth;
 	public GameObject GridPiece,BuildingPiece,PlayerPiece;
 	public GameObject[,] myMechGrid;
 	public List<string> buildingAreas = new List<string>();
@@ -14,19 +14,19 @@ public class GenerateGrid : MonoBehaviour {
 		myMechGrid = new GameObject[gridSize, gridSize];
 
 		StartGrid (); GenerateBuildings (); SpawnPlayers ();
+		this.transform.position = Vector3.up * 26f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
+		Debug.Log (GridPiece.GetComponent<SpriteRenderer> ().size.x);
 	}
 
 	void StartGrid(){
-		float cellWidth = GridPiece.GetComponent<SpriteRenderer> ().size.x;
 		for (int y = 0; y < gridSize; y++) {
 			for (int x = 0; x < gridSize; x++) {
 				//Color myCol = new Color (Random.value, Random.value, Random.value);
-				Vector3 myPos = new Vector3 (1 * x-gridSize/2 + cellWidth/2, 1 * y-gridSize/2 + cellWidth/2);
+				Vector3 myPos = new Vector3 ((x - gridSize/2) * cellWidth + cellWidth/2, (y - gridSize/2) * cellWidth + cellWidth/2);
 				GameObject currGridCell = GameObject.Instantiate (GridPiece, myPos, Quaternion.identity, this.transform.GetChild(0));
 				currGridCell.name = "Cell (" + x + "," + y + ")";
 				//currGridCell.GetComponent<SpriteRenderer> ().color = myCol;
