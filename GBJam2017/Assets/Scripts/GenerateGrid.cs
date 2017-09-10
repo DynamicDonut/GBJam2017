@@ -14,12 +14,11 @@ public class GenerateGrid : MonoBehaviour {
 		myMechGrid = new GameObject[gridSize, gridSize];
 
 		StartGrid (); GenerateBuildings (); SpawnPlayers ();
-		this.transform.position = Vector3.up * 26f;
+		this.transform.position = Vector3.up * 24f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (GridPiece.GetComponent<SpriteRenderer> ().size.x);
 	}
 
 	void StartGrid(){
@@ -45,6 +44,15 @@ public class GenerateGrid : MonoBehaviour {
 		}
 	}
 	void SpawnPlayers(){
-		GameObject.Instantiate(PlayerPiece, myMechGrid[0,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechA1 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechA2 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechB1 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechB2 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
+
+		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, 0, new Vector2(0,0));
+		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, 1, new Vector2(0,5));
+		pMechB1.GetComponent<PlayerMovement> ().TeamSet (false, 1, new Vector2(5,0));
+		pMechB2.GetComponent<PlayerMovement> ().TeamSet (false, 0, new Vector2(5,5));
+
 	}
 }

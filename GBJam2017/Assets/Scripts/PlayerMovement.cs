@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 	public int posX, posY, moveCounter;
+	public Sprite[] mechOptions;
 	GenerateGrid myGridScript;
 	bool ignoreMove;
 
 	// Use this for initialization
 	void Start () {
-		posX = posY = 0;
+		//posX = posY = 0;
 		moveCounter = Random.Range (3, 6);
 		ignoreMove = false;
 		myGridScript = GameObject.Find ("GridGen").GetComponent<GenerateGrid> ();
@@ -17,36 +18,36 @@ public class PlayerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (moveCounter != 0) {
-			if (Input.GetKeyUp (KeyCode.RightArrow)) {
-				if (posX < myGridScript.gridSize) {
-					posX++;
-				}
-				MovementCheck ("right");
-			}
-			if (Input.GetKeyUp (KeyCode.LeftArrow)) {
-				if (posX > 0) {
-					posX--;
-				}
-				MovementCheck ("left");
-			}
-			if (Input.GetKeyUp (KeyCode.UpArrow)) {
-				if (posY < myGridScript.gridSize) {
-					posY++;
-				}
-				MovementCheck ("up");
-			}
-			if (Input.GetKeyUp (KeyCode.DownArrow)) {
-				if (posY > 0) {
-					posY--;
-				}
-				MovementCheck ("down");
-			}
-		}
+//		if (moveCounter != 0) {
+//			if (Input.GetKeyUp (KeyCode.RightArrow)) {
+//				if (posX < myGridScript.gridSize-1) {
+//					posX++;
+//					MovementCheck ("right");
+//				}
+//			}
+//			if (Input.GetKeyUp (KeyCode.LeftArrow)) {
+//				if (posX > 0) {
+//					posX--;
+//					MovementCheck ("left");
+//				}
+//			}
+//			if (Input.GetKeyUp (KeyCode.UpArrow)) {
+//				if (posY < myGridScript.gridSize-1) {
+//					posY++;
+//					MovementCheck ("up");
+//				}
+//			}
+//			if (Input.GetKeyUp (KeyCode.DownArrow)) {
+//				if (posY > 0) {
+//					posY--;
+//					MovementCheck ("down");
+//				}
+//			}
+//		}
 
-		if (Input.GetKeyUp (KeyCode.Z)) {
-			AttackCloseRange (posX, posY);
-		}
+//		if (Input.GetKeyUp (KeyCode.Z)) {
+//			AttackCloseRange (posX, posY);
+//		}
 	}
 
 	void MovementCheck(string dir){
@@ -73,6 +74,15 @@ public class PlayerMovement : MonoBehaviour {
 			} 
 			ignoreMove = false;
 		}
+	}
+
+	public void TeamSet(bool isPlayer1, int myMech, Vector2 myPos){
+		if (!isPlayer1) {
+			this.GetComponent<SpriteRenderer> ().color = new Color (0.75f, 0.75f, 0.75f);
+			this.GetComponent<SpriteRenderer> ().flipX = true;
+		}
+		posX = (int) myPos.x; posY = (int) myPos.y;
+		this.GetComponent<SpriteRenderer> ().sprite = mechOptions [myMech];
 	}
 
 	void AttackCloseRange(int myX, int myY){

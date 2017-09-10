@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0998dbd0557c44a6c85f16199a5af63a
+timeCreated: 1505014824
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: m3x6
+  fontNames:
+  - m3x6
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

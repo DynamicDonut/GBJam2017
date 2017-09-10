@@ -1,0 +1,1088 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -667331979, guid: 89f0137620f6af44b9ba852b4190e64e, type: 3}
+  m_Name: m3x6
+  m_EditorClassIdentifier: 
+  hashCode: 3966576
+  material: {fileID: 21921912848977828}
+  materialHashCode: -1961273093
+  fontAssetType: 2
+  m_fontInfo:
+    Name: m3x6
+    PointSize: 16
+    Scale: 1
+    CharacterCount: 96
+    LineHeight: 14
+    Baseline: 0
+    Ascender: 11
+    CapHeight: 6
+    Descender: -2
+    CenterLine: 0
+    SuperscriptOffset: 11
+    SubscriptOffset: -2.390625
+    SubSize: 0.5
+    Underline: -2.390625
+    UnderlineThickness: 0.796875
+    strikethrough: 3.2727273
+    strikethroughThickness: 0.796875
+    TabWidth: 50
+    Padding: 1
+    AtlasWidth: 32
+    AtlasHeight: 128
+  atlas: {fileID: 28335780506593152}
+  m_glyphInfoList:
+  - id: 32
+    x: 1
+    y: 127
+    width: 5
+    height: 13
+    xOffset: 0
+    yOffset: 11
+    xAdvance: 5
+    scale: 1
+  - id: 33
+    x: 5
+    y: 15
+    width: 1
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 2
+    scale: 1
+  - id: 34
+    x: 1
+    y: 25
+    width: 3
+    height: 2
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 35
+    x: 1
+    y: 121
+    width: 5
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 6
+    scale: 1
+  - id: 36
+    x: 22
+    y: 112
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 37
+    x: 16
+    y: 42
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 38
+    x: 8
+    y: 121
+    width: 5
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 6
+    scale: 1
+  - id: 39
+    x: 1
+    y: 2
+    width: 1
+    height: 2
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 2
+    scale: 1
+  - id: 40
+    x: 18
+    y: 105
+    width: 2
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 41
+    x: 26
+    y: 15
+    width: 2
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 42
+    x: 1
+    y: 29
+    width: 3
+    height: 3
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 43
+    x: 6
+    y: 29
+    width: 3
+    height: 3
+    xOffset: 0
+    yOffset: 4
+    xAdvance: 4
+    scale: 1
+  - id: 44
+    x: 4
+    y: 2
+    width: 1
+    height: 2
+    xOffset: 0
+    yOffset: 1
+    xAdvance: 2
+    scale: 1
+  - id: 45
+    x: 16
+    y: 25
+    width: 3
+    height: 1
+    xOffset: 0
+    yOffset: 3
+    xAdvance: 4
+    scale: 1
+  - id: 46
+    x: 12
+    y: 12
+    width: 1
+    height: 1
+    xOffset: 0
+    yOffset: 1
+    xAdvance: 2
+    scale: 1
+  - id: 47
+    x: 1
+    y: 96
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 48
+    x: 11
+    y: 97
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 49
+    x: 16
+    y: 97
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 50
+    x: 21
+    y: 95
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 51
+    x: 26
+    y: 93
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 52
+    x: 11
+    y: 89
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 53
+    x: 16
+    y: 89
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 54
+    x: 21
+    y: 87
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 55
+    x: 26
+    y: 85
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 56
+    x: 1
+    y: 88
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 57
+    x: 6
+    y: 88
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 58
+    x: 10
+    y: 2
+    width: 1
+    height: 4
+    xOffset: 0
+    yOffset: 4
+    xAdvance: 2
+    scale: 1
+  - id: 59
+    x: 9
+    y: 8
+    width: 1
+    height: 5
+    xOffset: 0
+    yOffset: 4
+    xAdvance: 2
+    scale: 1
+  - id: 60
+    x: 21
+    y: 40
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 61
+    x: 11
+    y: 29
+    width: 3
+    height: 3
+    xOffset: 0
+    yOffset: 4
+    xAdvance: 4
+    scale: 1
+  - id: 62
+    x: 16
+    y: 35
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 63
+    x: 11
+    y: 81
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 64
+    x: 15
+    y: 121
+    width: 5
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 6
+    scale: 1
+  - id: 65
+    x: 16
+    y: 81
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 66
+    x: 21
+    y: 79
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 67
+    x: 26
+    y: 77
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 68
+    x: 1
+    y: 80
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 69
+    x: 6
+    y: 80
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 70
+    x: 11
+    y: 73
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 71
+    x: 16
+    y: 73
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 72
+    x: 21
+    y: 71
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 73
+    x: 26
+    y: 69
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 74
+    x: 1
+    y: 72
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 75
+    x: 6
+    y: 72
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 76
+    x: 11
+    y: 65
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 77
+    x: 22
+    y: 121
+    width: 5
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 6
+    scale: 1
+  - id: 78
+    x: 16
+    y: 65
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 79
+    x: 21
+    y: 63
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 80
+    x: 26
+    y: 61
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 81
+    x: 27
+    y: 110
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 82
+    x: 1
+    y: 64
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 83
+    x: 6
+    y: 64
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 84
+    x: 11
+    y: 57
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 85
+    x: 16
+    y: 57
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 86
+    x: 21
+    y: 55
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 87
+    x: 1
+    y: 113
+    width: 5
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 6
+    scale: 1
+  - id: 88
+    x: 26
+    y: 53
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 89
+    x: 1
+    y: 56
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 90
+    x: 6
+    y: 56
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 91
+    x: 1
+    y: 6
+    width: 2
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 92
+    x: 11
+    y: 49
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 93
+    x: 5
+    y: 6
+    width: 2
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 94
+    x: 6
+    y: 25
+    width: 3
+    height: 2
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 95
+    x: 21
+    y: 23
+    width: 3
+    height: 1
+    xOffset: 0
+    yOffset: 1
+    xAdvance: 4
+    scale: 1
+  - id: 96
+    x: 7
+    y: 2
+    width: 1
+    height: 2
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 2
+    scale: 1
+  - id: 97
+    x: 26
+    y: 38
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 98
+    x: 16
+    y: 49
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 99
+    x: 21
+    y: 33
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 100
+    x: 21
+    y: 47
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 101
+    x: 26
+    y: 31
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 102
+    x: 26
+    y: 45
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 103
+    x: 8
+    y: 105
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 104
+    x: 1
+    y: 48
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 105
+    x: 8
+    y: 15
+    width: 1
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 2
+    scale: 1
+  - id: 106
+    x: 29
+    y: 119
+    width: 2
+    height: 8
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 107
+    x: 6
+    y: 48
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 108
+    x: 1
+    y: 15
+    width: 2
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 3
+    scale: 1
+  - id: 109
+    x: 8
+    y: 114
+    width: 5
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 6
+    scale: 1
+  - id: 110
+    x: 1
+    y: 41
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 111
+    x: 6
+    y: 41
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 112
+    x: 1
+    y: 104
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 113
+    x: 13
+    y: 105
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 114
+    x: 1
+    y: 34
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 115
+    x: 6
+    y: 34
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 116
+    x: 11
+    y: 41
+    width: 3
+    height: 6
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 117
+    x: 11
+    y: 34
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 118
+    x: 16
+    y: 28
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 119
+    x: 15
+    y: 114
+    width: 5
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 6
+    scale: 1
+  - id: 120
+    x: 21
+    y: 26
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 121
+    x: 22
+    y: 103
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 122
+    x: 26
+    y: 24
+    width: 3
+    height: 5
+    xOffset: 0
+    yOffset: 5
+    xAdvance: 4
+    scale: 1
+  - id: 123
+    x: 27
+    y: 101
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 124
+    x: 30
+    y: 15
+    width: 1
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 2
+    scale: 1
+  - id: 125
+    x: 6
+    y: 96
+    width: 3
+    height: 7
+    xOffset: 0
+    yOffset: 6
+    xAdvance: 4
+    scale: 1
+  - id: 126
+    x: 11
+    y: 25
+    width: 3
+    height: 2
+    xOffset: 0
+    yOffset: 4
+    xAdvance: 4
+    scale: 1
+  - id: 160
+    x: 1
+    y: 127
+    width: 0
+    height: 0
+    xOffset: 0
+    yOffset: 0
+    xAdvance: 5
+    scale: 1
+  m_kerningInfo:
+    kerningPairs: []
+  m_kerningPair:
+    AscII_Left: 0
+    AscII_Right: 0
+    XadvanceOffset: 0
+  fallbackFontAssets: []
+  fontCreationSettings:
+    fontSourcePath: 
+    fontSizingMode: 0
+    fontSize: 0
+    fontPadding: 0
+    fontPackingMode: 0
+    fontAtlasWidth: 0
+    fontAtlasHeight: 0
+    fontCharacterSet: 0
+    fontStyle: 0
+    fontStlyeModifier: 0
+    fontRenderMode: 0
+    fontKerning: 0
+  fontWeights:
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  - regularTypeface: {fileID: 0}
+    italicTypeface: {fileID: 0}
+  normalStyle: 0
+  normalSpacingOffset: 0
+  boldStyle: 0.75
+  boldSpacing: 7
+  italicStyle: 35
+  tabSize: 10
+--- !u!21 &21921912848977828
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: m3x6 Material
+  m_Shader: {fileID: 4800000, guid: dca26082f9cb439469295791d9f76fe5, type: 3}
+  m_ShaderKeywords: UNDERLAY_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FaceTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 28335780506593152}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OutlineTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Ambient: 0.5
+    - _Bevel: 0.5
+    - _BevelClamp: 0
+    - _BevelOffset: 0
+    - _BevelRoundness: 0
+    - _BevelWidth: 0
+    - _BumpFace: 0
+    - _BumpOutline: 0
+    - _ColorMask: 15
+    - _Diffuse: 0.5
+    - _DiffusePower: 1
+    - _FaceDilate: 0
+    - _FaceUVSpeedX: 0
+    - _FaceUVSpeedY: 0
+    - _GlowInner: 0.05
+    - _GlowOffset: 0
+    - _GlowOuter: 0.05
+    - _GlowPower: 0.75
+    - _GradientScale: 5
+    - _LightAngle: 3.1416
+    - _MaskSoftnessX: 0
+    - _MaskSoftnessY: 0
+    - _OutlineSoftness: 0
+    - _OutlineUVSpeedX: 0
+    - _OutlineUVSpeedY: 0
+    - _OutlineWidth: 0
+    - _PerspectiveFilter: 0.875
+    - _Reflectivity: 10
+    - _ScaleRatioA: 0.8
+    - _ScaleRatioB: 0.7
+    - _ScaleRatioC: 0.7
+    - _ScaleX: 1
+    - _ScaleY: 1
+    - _ShaderFlags: 0
+    - _SpecularPower: 2
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    - _TextureHeight: 512
+    - _TextureWidth: 512
+    - _UnderlayDilate: -0.9
+    - _UnderlayOffsetX: 0
+    - _UnderlayOffsetY: -1
+    - _UnderlaySoftness: 0
+    - _VertexOffsetX: 0
+    - _VertexOffsetY: 0
+    - _WeightBold: 0.5
+    - _WeightNormal: 0
+    m_Colors:
+    - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EnvMatrixRotation: {r: 0, g: 0, b: 0, a: 0}
+    - _FaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _GlowColor: {r: 0, g: 1, b: 0, a: 0.5}
+    - _MaskCoord: {r: 0, g: 0, b: 32767, a: 32767}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectFaceColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectOutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
+    - _UnderlayColor: {r: 0.25, g: 0.25, b: 0.25, a: 1}
+--- !u!28 &28335780506593152
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: m3x6 Atlas
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  serializedVersion: 2
+  m_Width: 32
+  m_Height: 128
+  m_CompleteImageSize: 4096
+  m_TextureFormat: 1
+  m_MipCount: 1
+  m_IsReadable: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 0
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 0
+  image data: 4096
+  _typelessdata: 00000000000000000000000000000000000000000000000000000000000000000000ff00ff00000000ffff00ff000000ffffffff0000ff000000ff0000ff000000ffffffffff0000ff0000ff000000ff000000000000ff00ff00ff000000ff000000ff00ff000000ff00ff00ff0000ff00ffffff0000ff00ff00ff000000ff000000ff00ff00000000ff0000000000ff00ff00ff0000ff00ff00ff000000ff0000ffffffffff0000ff00ff00000000ff0000ffff0000ff00ff00ff000000ff000000ff00ff00000000ff000000000000ffffff000000ffffffff00000000ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ff000000ff00ff000000ff00ff00ff000000ff00ff00000000ff000000000000000000ff00ff00ff0000ff00ff00ff0000ff00ff00ff0000ffff000000000000000000ff00ff00ff0000ff00ff00ff0000ff00ff00ff00000000ff00000000ff000000ff00ff00ff0000ff00ff00ff0000ff00ff00ff0000ffffff0000ffff00000000ff00ff00ff0000ffff00ff000000ff000000ff0000ff00000000ff00ff000000ff000000ff0000000000000000000000000000000000ffff0000ff00ff00000000000000000000000000000000000000000000000000ff000000ff00ff00000000000000000000ffff0000000000ff000000ff00000000000000ff00ff000000ff0000000000000000ff00000000ff0000ff000000000000000000ffff000000ff000000000000ffffff0000ffffff0000ff000000ffff000000000000000000ffff0000000000ff00ff0000ff00ff0000ff0000000000ff0000000000000000ff00ff00000000ff00ff0000ff00ff0000ff00000000ffff00000000ff000000ff00ff00000000ff00ff0000ff00ff0000ff000000ff00ff000000ff00000000ff00ff0000000000ffff000000ffff000000ff0000ff00ff000000ff00000000ffffff000000000000000000000000000000000000ff00ff0000ff0000000000000000000000000000000000000000000000000000ff00ff000000ff000000000000000000ff00000000ffff000000ffffff000000000000000000ff00000000ff0000000000ff000000ff00ff000000ff0000000000000000000000ff000000ff0000000000ff000000ff00ff000000ff000000ffffff00000000000000000000ff0000000000ff0000ff00ff000000ff000000ff000000000000000000000000ff00000000ff000000ff00ff0000ffff00000000ff000000ffff00000000000000ff000000ff00000000ffff000000ff0000000000ff00000000ff000000000000ff0000ff00000000000000000000000000000000ff00000000ff000000000000000000000000000000000000000000000000ffff000000ffff0000000000000000000000000000000000ff0000ffff00000000000000000000ff00000000ffff000000ffff0000000000ff00000000ff00000000000000ffff0000000000ff00ff00000000ff00000000ff00000000ff000000ffff000000000000000000ff00ff000000ffff000000ffff0000ffff000000ff00ff00000000000000000000ff000000ff00ff0000ff00ff0000ff00000000ff00ff000000ff0000000000ff00ff0000ff00ff0000ff00ff0000ffffff0000ffff00000000ff000000000000ffff0000ffff00000000000000000000000000ff0000000000ff0000000000000000000000000000000000000000000000000000ffff00000000ff000000000000000000000000000000ff000000ff00ff000000000000000000ff00000000ffff000000ffffff00000000000000ff00ff00000000000000ffffff00000000ff00ff0000ff0000000000ff000000ff00ff0000ffffff000000000000000000ff00ff0000ff000000000000ff0000ffffff0000ff00ff000000000000000000ff00ff0000ffff0000000000ff0000ff00ff0000ff00ff0000ffffff00000000ff00ff0000ff00000000ffff00000000ffff0000ffffff0000ff000000000000ffff000000ffffff000000000000000000000000ff00ff0000ff0000000000000000000000000000000000000000000000000000ffff000000ff00000000000000000000000000000000ff00000000ffffff00000000000000ff000000000000ffff000000ff00ff0000ff00000000ff00ff0000000000000000ffff000000000000ff0000ff00ff0000ff00000000ff00ff0000ff00ff0000000000000000000000ff0000ff00ff0000ffff000000ff00000000ff00ff0000000000000000000000ff0000ffff000000ff00000000ff00000000ff00ff0000ffffff000000000000ff0000ff00ff000000ffff000000ffff0000ffffff000000ff0000000000ffffff0000ff00ff000000000000000000000000ff00ff000000ff00000000000000000000000000000000000000000000000000ff00ff000000ff000000000000000000000000000000ffffff0000ff00ff0000000000000000ff0000000000ff00ff0000ffff000000ff00000000ff00ff00000000000000ffffff00000000ff00ff00000000ff0000ff00000000ff00ff0000ffff00000000000000000000ff00ff00000000ff0000ff00000000ff00ff0000ff00ff000000000000000000ffff000000ffffff0000ff00000000ff00ff0000ff00ff0000ff000000000000ff00ff0000ff00000000ff00000000ffff000000ff00ff0000ff000000000000ffffff000000ffff000000000000000000000000ff00ff0000ff000000000000000000000000000000000000000000000000000000ffff0000ffff00000000000000000000000000000000ff000000ffffff00000000000000ff00ff0000000000ff000000ffffff000000ff000000ff00ff00000000000000ffffff0000000000ff000000ff0000000000ff000000ff00ff000000ff0000000000000000000000ff00000000ff00000000ff000000ff00ff0000ff00ff000000000000000000ff00ff000000ff00000000ff000000ff00ff0000ff00ff0000ff00ff00000000ff00ff00000000ff0000ffffff0000ff00ff0000ff00ff0000ff00ff00000000ff00ff0000ffffff000000000000000000000000ff00ff000000ff00000000000000000000000000000000000000000000000000ff00ff000000ff0000000000000000000000000000000000ff0000ffffff00000000000000ff00ff00000000ff00ff0000ff00ff00000000ff0000ff00ff00000000000000ff00ff00000000ff00ff0000ff00ff000000ff000000ff00ff0000ffffff000000000000000000ff00ff0000ffff00000000ff000000ff00ff0000ff00ff000000000000000000ff00ff0000ff00ff0000ff00000000ffff000000ff00ff000000ff0000000000ffff000000ff00000000ff00000000ff00000000ff00ff000000ff0000000000ff00000000ff000000000000000000000000000000ffff0000ffffff0000000000000000000000000000000000000000000000000000ff000000ff00000000000000000000000000000000ff0000000000ff0000000000000000ff0000000000ff00ff0000ffff00000000ff000000ff0000000000000000000000ff00000000ff00ff0000ff00ff000000ff00000000ff0000000000ff000000000000000000ff00ff0000ff00ff0000ffffff00000000ff000000ff00000000000000000000ff00ff0000ff00ff000000ff000000ff00000000ff00000000ffffff00000000ffff00000000ffff000000ff000000000000000000ff000000ff00ff0000000000000000000000000000000000000000000000000000ff000000ffff00000000000000000000000000000000000000ff0000000000000000000000ff00000000ff00000000ffff000000ffffff000000ff0000000000000000ffff0000000000ff000000000000ff0000ff00ff00000000ff0000ffffff000000000000000000ff00000000ffffff0000ff00ff000000ff000000ff0000000000000000000000ff00000000ff00000000ff00ff0000ff00000000ff0000000000ffff0000000000ffff000000ffff0000ff00ff00000000000000ff00000000ff000000000000000000000000000000000000000000000000000000ffff0000ffffff0000000000000000000000000000000000000000ff0000000000000000ff00ff00000000ff00ff000000ff000000ffffff0000ff00ff0000000000000000ffff0000000000ff000000ffffff00000000000000ff00ff0000ff00ff000000000000000000ff00ff000000ff000000ffffff0000ff00ff0000ff00ff000000000000000000000000000000000000000000000000ff00ff000000ff000000ffffff000000000000000000000000000000000000000000000000ff00ff0000ff000000000000ff00ff0000ff00ff0000ffff0000000000000000ff00ff000000ff0000000000ff00ff000000ff00000000ffff0000ffffff000000000000000000ff0000000000000000000000000000000000000000000000000000000000ffffff000000000000000000000000000000000000000000000000ffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ff000000ff000000ff0000ff0000ff000000000000000000000000000000000000ff0000ff0000ff000000000000ff000000000000000000000000000000000000ff0000ff0000ff000000ff0000ff000000000000000000000000000000000000ff0000ff0000ff000000ff0000ff000000000000000000000000000000000000ff0000ff0000ff000000ff000000000000000000000000000000000000000000ff0000ff0000ff000000ff0000ff0000000000000000000000000000000000ff000000ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffff0000ffff0000ff0000ff0000000000000000000000000000000000000000ff00000000ff0000ff0000000000000000000000000000000000000000000000ff00000000ff0000000000000000000000000000000000000000000000000000ff00000000ff0000000000000000000000000000000000000000000000000000ff00000000ff0000ff0000000000000000000000000000000000000000000000ff00000000ff0000000000000000000000000000000000000000000000000000ffff0000ffff0000000000000000000000000000000000000000000000000000000000000000000000ff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ff0000ff0000ff00000000000000000000000000000000000000000000000000ff0000ff0000ff0000ff00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
