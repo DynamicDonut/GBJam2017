@@ -16,10 +16,6 @@ public class GenerateGrid : MonoBehaviour {
 		StartGrid (); GenerateBuildings (); SpawnPlayers ();
 		this.transform.position = Vector3.up * 24f;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 
 	void StartGrid(){
 		for (int y = 0; y < gridSize; y++) {
@@ -49,10 +45,13 @@ public class GenerateGrid : MonoBehaviour {
 		GameObject pMechB1 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
 		GameObject pMechB2 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
 
-		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, 0, new Vector2(0,0));
-		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, 1, new Vector2(0,5));
-		pMechB1.GetComponent<PlayerMovement> ().TeamSet (false, 1, new Vector2(5,0));
-		pMechB2.GetComponent<PlayerMovement> ().TeamSet (false, 0, new Vector2(5,5));
+		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, 0, new Vector2(0,0), "A1");
+		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, 1, new Vector2(0,5), "A2");
+		pMechB1.GetComponent<PlayerMovement> ().TeamSet (false, 1, new Vector2(5,0), "B1");
+		pMechB2.GetComponent<PlayerMovement> ().TeamSet (false, 0, new Vector2(5,5), "B2");
+
+		pMechB1.GetComponent<PlayerMovement> ().p1MechTeam = false;
+		pMechB2.GetComponent<PlayerMovement> ().p1MechTeam = false;
 
 	}
 }

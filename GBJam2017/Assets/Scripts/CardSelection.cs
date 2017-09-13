@@ -1,17 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CardSelection : MonoBehaviour {
 	public int selectedCard;
 	public float spd;
 	TurnController myTCont;
-	Vector3 hiddenCardsPos;
+	public Vector3 hiddenCardsPos;
 	public bool amHidden;
+
+	public int currSymbolToUse;
 
 	// Use this for initialization
 	void Start () {
 		selectedCard = 1;
+		currSymbolToUse = 0;
 		myTCont = GameObject.Find ("GameManager").GetComponent<TurnController> ();
 		hiddenCardsPos = transform.position;
 		amHidden = true;
@@ -19,10 +23,17 @@ public class CardSelection : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		transform.Find ("TurnText").GetComponent<TextMeshPro> ().text = "Turn " + myTCont.currTurn;
+
 		if (myTCont.currTurnPhase.Substring (0, 4) == "Pick") {
 			amHidden = false;
 		} else {
 			amHidden = true;
+		}
+
+		if (currSymbolToUse == 4) {
+			myTCont.currPhase++;
+			currSymbolToUse = 0;
 		}
 
 		//		if (Input.GetKeyUp (KeyCode.DownArrow)) {
@@ -53,6 +64,12 @@ public class CardSelection : MonoBehaviour {
 						transform.GetChild (i).GetComponent<SpriteRenderer> ().color = new Color (0.75f, 0.75f, 0.75f);
 
 					}
+				}
+
+				if (Input.GetKeyUp (KeyCode.Z) && !transform.GetChild(selectedCard - 1).GetComponent<CardInfo> ().isChosen) {
+					transform.GetChild(selectedCard - 1).GetComponent<CardInfo> ().selectionType = currSymbolToUse;
+					transform.GetChild (selectedCard - 1).GetComponent<CardInfo> ().isChosen = true;
+					currSymbolToUse++;
 				}
 			}
 		} else {

@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 1ed11f0adb9784cb1a1cc09ff990b44a
-timeCreated: 1505020629
+timeCreated: 1505287751
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Bangers_0
     21300002: Bangers_1
+    21300004: Bangers_2
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -132,6 +133,20 @@ TextureImporter:
         height: 23
       alignment: 9
       pivot: {x: 0.55, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Bangers_2
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 53
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

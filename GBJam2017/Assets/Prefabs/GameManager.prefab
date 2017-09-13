@@ -19,7 +19,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4882952402620200}
-  - component: {fileID: 114787456757928410}
   - component: {fileID: 114746604377192850}
   m_Layer: 0
   m_Name: GameManager
@@ -55,18 +54,12 @@ MonoBehaviour:
   currTurn: 0
   currPhase: 0
   totalTurns: 0
+  p1_health: 0
+  p2_health: 0
+  tHealth: 15
   currTurnPhase: 
   UIDialogueText: {fileID: 0}
---- !u!114 &114787456757928410
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1794181615749582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b4e2b8f5edc5487a8a038708b0bb49b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cardFolder: {fileID: 0}
-  spd: 35
+  TurnCardText: {fileID: 0}
+  myGrid: {fileID: 0}
+  myCards: {fileID: 0}
+  myUI: {fileID: 0}
