@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GenerateGrid : MonoBehaviour {
 	public int gridSize, numOfBuildings;
+	public GMScript myGM;
 	public float cellWidth;
 	public GameObject GridPiece,BuildingPiece,PlayerPiece;
 	public GameObject[,] myMechGrid;
@@ -45,10 +46,10 @@ public class GenerateGrid : MonoBehaviour {
 		GameObject pMechB1 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
 		GameObject pMechB2 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
 
-		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, 0, new Vector2(0,0), "A1");
-		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, 1, new Vector2(0,5), "A2");
-		pMechB1.GetComponent<PlayerMovement> ().TeamSet (false, 1, new Vector2(5,0), "B1");
-		pMechB2.GetComponent<PlayerMovement> ().TeamSet (false, 0, new Vector2(5,5), "B2");
+		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, myGM.p1_mech1.sprite_id, new Vector2(0,0), "A1");
+		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, myGM.p1_mech2.sprite_id, new Vector2(0,5), "A2");
+		pMechB1.GetComponent<PlayerMovement> ().TeamSet (false, myGM.p2_mech1.sprite_id, new Vector2(5,0), "B1");
+		pMechB2.GetComponent<PlayerMovement> ().TeamSet (false, myGM.p2_mech2.sprite_id, new Vector2(5,5), "B2");
 
 		pMechB1.GetComponent<PlayerMovement> ().p1MechTeam = false;
 		pMechB2.GetComponent<PlayerMovement> ().p1MechTeam = false;

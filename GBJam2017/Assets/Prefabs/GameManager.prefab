@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4882952402620200}
   - component: {fileID: 114746604377192850}
+  - component: {fileID: 114670532196123088}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -40,6 +41,92 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114670532196123088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1794181615749582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc68c2e0fcd53429587114dc6b5d6c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameMechs:
+  - name: Mech A
+    sprite_id: 0
+    move_count: 3
+    myCards:
+    - 0_ATK SHRT
+    - 0_ATK SHRT
+    - 0_ATK SHRT
+    - 0_ATK SHRT
+    - 6_GRENDE S
+    - 4_HEAL DMG
+  - name: Mech B
+    sprite_id: 1
+    move_count: 2
+    myCards:
+    - 1_ATK DIAG
+    - 1_ATK DIAG
+    - 1_ATK DIAG
+    - 6_GRENDE S
+    - 6_GRENDE S
+    - 4_HEAL DMG
+  - name: Mech C
+    sprite_id: 2
+    move_count: 4
+    myCards:
+    - 7_GRENDE L
+    - 7_GRENDE L
+    - 7_GRENDE L
+    - 7_GRENDE L
+    - 0_ATK SHRT
+    - 4_HEAL DMG
+  gamePilots:
+  - name: Pilot A
+    sprite_id: 0
+    myCards:
+    - 2_DMG UP
+    - 2_DMG UP
+    - 2_DMG UP
+    - 2_DMG UP
+    - 1_ATK DIAG
+    - 1_ATK DIAG
+  - name: Pilot B
+    sprite_id: 1
+    myCards:
+    - 5_DODGE
+    - 5_DODGE
+    - 5_DODGE
+    - 5_DODGE
+    - 4_HEAL DMG
+    - 4_HEAL DMG
+  - name: Pilot C
+    sprite_id: 2
+    myCards:
+    - 3_DMG MAX
+    - 3_DMG MAX
+    - 6_GRENDE S
+    - 6_GRENDE S
+    - 7_GRENDE L
+    - 7_GRENDE L
+  - name: Pilot D
+    sprite_id: 3
+    myCards:
+    - 4_HEAL DMG
+    - 4_HEAL DMG
+    - 4_HEAL DMG
+    - 4_HEAL DMG
+    - 7_GRENDE L
+    - 7_GRENDE L
+  pilotPortraits:
+  - {fileID: 21300000, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
+  - {fileID: 21300002, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
+  - {fileID: 21300004, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
+  - {fileID: 21300006, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
+  p1CardDeck: []
+  p2CardDeck: []
 --- !u!114 &114746604377192850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -60,6 +147,7 @@ MonoBehaviour:
   currTurnPhase: 
   UIDialogueText: {fileID: 0}
   TurnCardText: {fileID: 0}
+  listOfMechs: []
   myGrid: {fileID: 0}
   myCards: {fileID: 0}
   myUI: {fileID: 0}

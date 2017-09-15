@@ -57,7 +57,7 @@ public class TurnController : MonoBehaviour {
 
 	public void EndTurn(){
 		for (int i = 0; i < listOfMechs.Length; i++) {
-			listOfMechs [i].GetComponent<PlayerMovement> ().AttackCloseRange (listOfMechs [i].GetComponent<PlayerMovement> ().posX, listOfMechs [i].GetComponent<PlayerMovement> ().posY);
+			listOfMechs [i].GetComponent<PlayerMovement> ().AttackShortRange (listOfMechs [i].GetComponent<PlayerMovement> ().posX, listOfMechs [i].GetComponent<PlayerMovement> ().posY);
 		}
 
 		myUI.Find ("P1 Info").GetChild (2).GetComponent<TextMeshPro> ().text = p1_health + " / " + tHealth;
