@@ -91,8 +91,4 @@ public class GMScript : MonoBehaviour {
 		GameObject.Find ("Pilot2A").transform.GetChild (0).GetComponent<SpriteRenderer> ().sprite = pilotPortraits[p2_pilot1.sprite_id];
 		GameObject.Find ("Pilot2B").transform.GetChild (0).GetComponent<SpriteRenderer> ().sprite = pilotPortraits[p2_pilot2.sprite_id];
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	}
 }

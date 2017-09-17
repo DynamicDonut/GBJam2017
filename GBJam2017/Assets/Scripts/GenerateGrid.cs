@@ -41,10 +41,10 @@ public class GenerateGrid : MonoBehaviour {
 		}
 	}
 	void SpawnPlayers(){
-		GameObject pMechA1 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
-		GameObject pMechA2 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
-		GameObject pMechB1 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
-		GameObject pMechB2 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechA1 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechA2 = GameObject.Instantiate(PlayerPiece, myMechGrid[0,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechB1 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,5].transform.position, Quaternion.identity, this.transform.GetChild(2));
+		GameObject pMechB2 = GameObject.Instantiate(PlayerPiece, myMechGrid[5,0].transform.position, Quaternion.identity, this.transform.GetChild(2));
 
 		pMechA1.GetComponent<PlayerMovement> ().TeamSet (true, myGM.p1_mech1.sprite_id, new Vector2(0,0), "A1");
 		pMechA2.GetComponent<PlayerMovement> ().TeamSet (true, myGM.p1_mech2.sprite_id, new Vector2(0,5), "A2");
