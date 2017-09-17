@@ -4,16 +4,18 @@ using UnityEngine;
 using TMPro;
 
 public class PlayerMovement : MonoBehaviour {
-	public int posX, posY, moveCounter, currMoves;
+	public int posX, posY, moveCounter, currMoves, myDMG;
 	public Sprite[] mechOptions;
 	GenerateGrid myGridScript;
 	TurnController myTurnCont;
 	bool ignoreMove;
+    public string nextMove;
 	public bool p1MechTeam, dmgUp, dmgMax, dodge;
 
 	// Use this for initialization
 	void Start () {
-		//posX = posY = 0;
+        //posX = posY = 0;
+        myDMG = 1;
 		moveCounter = Random.Range (3, 6);
 		currMoves = moveCounter;
 		ignoreMove = dmgUp = dmgMax = dodge = false;
@@ -27,6 +29,18 @@ public class PlayerMovement : MonoBehaviour {
 //		if (Input.GetKeyUp (KeyCode.Z)) {
 //			AttackCloseRange (posX, posY);
 //		}
+
+        if (dmgUp)
+        {
+            myDMG = 2;
+        } else if (dmgMax)
+        {
+            myDMG = 5;
+        }
+        else
+        {
+            myDMG = 1;
+        }
 
 		if (this.name == "B1" || this.name == "B2") {
 			p1MechTeam = false;
@@ -148,7 +162,39 @@ public class PlayerMovement : MonoBehaviour {
 		this.name = myName;
 	}
 
-	public void AttackShortRange(int myX, int myY){
+    public void UseMove(string s)
+    {
+        if (s.Substring(0,1) == "0")
+        {
+            ShortRange();
+        }
+        if (s.Substring(0, 1) == "1")
+        {
+            Diagonal();
+        }
+        if (s.Substring(0, 1) == "2")
+        {
+            DamageUp();
+        }
+        if (s.Substring(0, 1) == "3")
+        {
+            DamageMax();
+        }
+        if (s.Substring(0, 1) == "4")
+        {
+            HealDamage();
+        }
+        if (s.Substring(0, 1) == "5")
+        {
+            DodgeMove();
+        }
+        if (s.Substring(0, 1) == "6")
+        {
+            Grenade();
+        }
+    }
+
+	public void ShortRange(){
 //		GameObject.Find ("Cell (" + (myX - 1) + "," + myY + ")").GetComponent<SpriteRenderer> ().color = Color.black;
 //		GameObject.Find ("Cell (" + (myX + 1) + "," + myY + ")").GetComponent<SpriteRenderer> ().color = Color.black;
 //		GameObject.Find ("Cell (" + myX + "," + (myY - 1) + ")").GetComponent<SpriteRenderer> ().color = Color.black;
@@ -158,11 +204,16 @@ public class PlayerMovement : MonoBehaviour {
 		for(int i = 0; i < 4; i++){
 			if (mechSpots [i].GetComponent<PlayerMovement> ().posX == posX) {
 				if (mechSpots [i].GetComponent<PlayerMovement> ().posY == posY + 1 || mechSpots [i].GetComponent<PlayerMovement> ().posY == posY - 1) {
-					if (!p1MechTeam) {
-						myTurnCont.p1_health--;
-					} else {
-						myTurnCont.p2_health--;
-					}
+                    if (!mechSpots[i].GetComponent<PlayerMovement>().dodge)
+                    {
+                        if (!p1MechTeam)
+                        {
+                            myTurnCont.p1_health-=myDMG;
+                        }
+                        else {
+                            myTurnCont.p2_health -= myDMG;
+                        }
+                    }
 
 					Debug.Log ("Attack Hit! " + mechSpots [i].name + " was hit with 1 DMG!");
 				}
@@ -170,19 +221,27 @@ public class PlayerMovement : MonoBehaviour {
 
 			if (mechSpots [i].GetComponent<PlayerMovement> ().posY == posY) {
 				if (mechSpots [i].GetComponent<PlayerMovement> ().posX == posX + 1 || mechSpots [i].GetComponent<PlayerMovement> ().posX == posX - 1) {
-					if (!p1MechTeam) {
-						myTurnCont.p1_health--;
-					} else {
-						myTurnCont.p2_health--;
-					}
+                    if (!mechSpots[i].GetComponent<PlayerMovement>().dodge)
+                    {
+                        if (!p1MechTeam)
+                        {
+                            myTurnCont.p1_health -= myDMG;
+                        }
+                        else {
+                            myTurnCont.p2_health -= myDMG;
+                        }
+                    }
 
 					Debug.Log ("Attack Hit! " + mechSpots [i].name + " was hit with 1 DMG!");
 				}
 			}
 		}
-	}
 
-	public void DamageUp(){
+        if (dmgMax) { dmgMax = false; }
+        if (dmgUp) { dmgUp = false; }
+    }
+
+    public void DamageUp(){
 		dmgUp = true;
 	}
 
@@ -202,49 +261,52 @@ public class PlayerMovement : MonoBehaviour {
 		dodge = true;
 	}
 
-	public void Grenade(){
+	public void Diagonal(){
 		GameObject[] mechSpots = GameObject.FindGameObjectsWithTag ("Mech");
 		for(int i = 0; i < 4; i++){
 			if (mechSpots [i].GetComponent<PlayerMovement> ().posX == posX + 1 || mechSpots [i].GetComponent<PlayerMovement> ().posX == posX - 1) {
 				if (mechSpots [i].GetComponent<PlayerMovement> ().posY == posY + 1 || mechSpots [i].GetComponent<PlayerMovement> ().posY == posY - 1) {
-					if (!p1MechTeam) {
-						myTurnCont.p1_health--;
-					} else {
-						myTurnCont.p2_health--;
-					}
+                    if (!mechSpots[i].GetComponent<PlayerMovement>().dodge)
+                    {
+                        if (!p1MechTeam)
+                        {
+                            myTurnCont.p1_health -= myDMG;
+                        }
+                        else {
+                            myTurnCont.p2_health -= myDMG;
+                        }
+                    }
 
 					Debug.Log ("Attack Hit! " + mechSpots [i].name + " was hit with 1 DMG!");
 				}
 			}
 		}
-	}
+        if (dmgMax) { dmgMax = false; }
+        if (dmgUp) { dmgUp = false; }
+    }
 
-	public void Explode(){
+	public void Grenade(){
 		GameObject[] mechSpots = GameObject.FindGameObjectsWithTag ("Mech");
 		for(int i = 0; i < 4; i++){
-			if (mechSpots [i].GetComponent<PlayerMovement> ().posX == posX) {
-				if (mechSpots [i].GetComponent<PlayerMovement> ().posY <= posY + 1 && mechSpots [i].GetComponent<PlayerMovement> ().posY >= posY - 1) {
+            if (mechSpots[i].GetComponent<PlayerMovement>().posX <= posX + 1 && mechSpots[i].GetComponent<PlayerMovement>().posX >= posX - 1){
+                if (mechSpots [i].GetComponent<PlayerMovement> ().posY <= posY + 1 && mechSpots [i].GetComponent<PlayerMovement> ().posY >= posY - 1) {
 					if (!p1MechTeam) {
-						myTurnCont.p1_health-=2;
-						myTurnCont.p2_health--;
+                        if (!mechSpots[i].GetComponent<PlayerMovement>().dodge)
+                        {
+                            myTurnCont.p1_health -= myDMG +1;
+                        }
+						myTurnCont.p2_health --;
 					} else {
+                        if (!mechSpots[i].GetComponent<PlayerMovement>().dodge)
+                        {
+                            myTurnCont.p2_health -= myDMG + 1;
+                        }
 						myTurnCont.p1_health--;
-						myTurnCont.p2_health-=2;
-					}
-				}
-			}
-
-			if (mechSpots [i].GetComponent<PlayerMovement> ().posY == posY) {
-				if (mechSpots [i].GetComponent<PlayerMovement> ().posX <= posX + 1 && mechSpots [i].GetComponent<PlayerMovement> ().posX >= posX - 1) {
-					if (!p1MechTeam) {
-						myTurnCont.p1_health-=2;
-						myTurnCont.p2_health--;
-					} else {
-						myTurnCont.p1_health--;
-						myTurnCont.p2_health-=2;
 					}
 				}
 			}
 		}
-	}
+        if (dmgMax) { dmgMax = false; }
+        if (dmgUp) { dmgUp = false; }
+    }
 }

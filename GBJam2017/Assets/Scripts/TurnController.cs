@@ -52,12 +52,11 @@ public class TurnController : MonoBehaviour {
 
 		currTurnPhase = turnPhases [currPhase];
 		UIDialogueText.text = currTurnPhase + " of Turn " + currTurn;
-		Debug.Log (currTurnPhase + " of Turn " + currTurn);
 	}
 
 	public void EndTurn(){
 		for (int i = 0; i < listOfMechs.Length; i++) {
-			listOfMechs [i].GetComponent<PlayerMovement> ().AttackShortRange (listOfMechs [i].GetComponent<PlayerMovement> ().posX, listOfMechs [i].GetComponent<PlayerMovement> ().posY);
+            listOfMechs[i].GetComponent<PlayerMovement>().UseMove(listOfMechs[i].GetComponent<PlayerMovement>().nextMove);
 		}
 
 		myUI.Find ("P1 Info").GetChild (2).GetComponent<TextMeshPro> ().text = p1_health + " / " + tHealth;

@@ -61,7 +61,7 @@ MonoBehaviour:
     - 0_ATK SHRT
     - 0_ATK SHRT
     - 0_ATK SHRT
-    - 6_GRENDE S
+    - 6_GRENADE
     - 4_HEAL DMG
   - name: Mech B
     sprite_id: 1
@@ -70,17 +70,17 @@ MonoBehaviour:
     - 1_ATK DIAG
     - 1_ATK DIAG
     - 1_ATK DIAG
-    - 6_GRENDE S
-    - 6_GRENDE S
+    - 6_GRENADE
+    - 6_GRENADE
     - 4_HEAL DMG
   - name: Mech C
     sprite_id: 2
     move_count: 4
     myCards:
-    - 7_GRENDE L
-    - 7_GRENDE L
-    - 7_GRENDE L
-    - 7_GRENDE L
+    - 6_GRENADE
+    - 6_GRENADE
+    - 6_GRENADE
+    - 6_GRENADE
     - 0_ATK SHRT
     - 4_HEAL DMG
   gamePilots:
@@ -107,10 +107,10 @@ MonoBehaviour:
     myCards:
     - 3_DMG MAX
     - 3_DMG MAX
-    - 6_GRENDE S
-    - 6_GRENDE S
-    - 7_GRENDE L
-    - 7_GRENDE L
+    - 6_GRENADE
+    - 6_GRENADE
+    - 6_GRENADE
+    - 6_GRENADE
   - name: Pilot D
     sprite_id: 3
     myCards:
@@ -118,8 +118,8 @@ MonoBehaviour:
     - 4_HEAL DMG
     - 4_HEAL DMG
     - 4_HEAL DMG
-    - 7_GRENDE L
-    - 7_GRENDE L
+    - 6_GRENADE
+    - 6_GRENADE
   pilotPortraits:
   - {fileID: 21300000, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
   - {fileID: 21300002, guid: 073ca5f72d9944a5eb20f6f2b1e8093e, type: 3}
@@ -143,7 +143,7 @@ MonoBehaviour:
   totalTurns: 0
   p1_health: 0
   p2_health: 0
-  tHealth: 15
+  tHealth: 10
   currTurnPhase: 
   UIDialogueText: {fileID: 0}
   TurnCardText: {fileID: 0}
